@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    tools:context=".ActivityAddForSeller">
+
+    <TextView
+        android:id="@+id/txtAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNameforSel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:textColor="@color/black"
+        android:hint="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAdd" />
+
+    <EditText
+        android:id="@+id/edtDesforSel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripton"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNameforSel" />
+    <EditText
+        android:id="@+id/edtPriceforSel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDesforSel" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="231dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPriceforSel"
+        android:src="@drawable/ic_image"/>
+
+    <ImageButton
+        android:id="@+id/imageBtnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPriceforSel"
+        android:src="@drawable/ic_camera"
+        android:background="@null"/>
+
+    <ImageButton
+        android:id="@+id/imageBtnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/edtPriceforSel"
+        android:src="@drawable/ic_upload"
+        android:background="@null"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirm"
+        android:backgroundTint="@color/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="68dp"
+        android:text="Add"
+        android:backgroundTint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

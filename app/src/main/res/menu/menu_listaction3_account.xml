@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_policy"
+        android:title="@string/action_policy"
+        android:icon="@drawable/ic_policy"/>
+
+    <item android:id="@+id/action_setting"
+        android:title="@string/action_setting"
+        android:icon="@drawable/ic_setting"/>
+
+</menu>

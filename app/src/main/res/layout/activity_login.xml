@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidlineLoginLeft"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidlineLoginRight"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94"/>
+<!--    <Button-->
+<!--        android:id="@+id/btnWithPhone"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        style="@style/Widget.MaterialComponents.Button.Icon"-->
+<!--        app:icon="@drawable/ic_phone"-->
+<!--        android:text="Connect with Phone Number"-->
+<!--        android:textSize="15sp"-->
+<!--        android:backgroundTint="@color/green"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        app:layout_constraintRight_toRightOf="@id/guidlineLoginRight"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/guidlineLoginLeft"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnWithFb"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        style="@style/Widget.MaterialComponents.Button.Icon"-->
+<!--        app:icon="@drawable/ic_facebook"-->
+<!--        android:text="Connect with FaceBook"-->
+<!--        android:textSize="15sp"-->
+<!--        android:backgroundTint="@color/blue"-->
+<!--        android:textAllCaps="false"-->
+<!--        app:layout_constraintRight_toRightOf="@id/guidlineLoginRight"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/guidlineLoginLeft"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btnWithPhone" />-->
+
+    <Button
+        android:id="@+id/btnWithGoogle"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:backgroundTint="@color/milired"
+        android:text="Connect with Google"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:icon="@drawable/ic_google"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/guidlineLoginLeft"
+        app:layout_constraintRight_toRightOf="@id/guidlineLoginRight"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewLoginOption"
+        android:text="Or login with your account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWithGoogle"/>
+
+    <EditText
+        android:id="@+id/edtTextUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_mail"
+        app:layout_constraintRight_toRightOf="@id/guidlineLoginRight"
+        app:layout_constraintLeft_toLeftOf="@id/guidlineLoginLeft"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewLoginOption"/>
+    <EditText
+        android:id="@+id/edtTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/ic_lock"
+        app:layout_constraintRight_toRightOf="@id/guidlineLoginRight"
+        app:layout_constraintLeft_toLeftOf="@id/guidlineLoginLeft"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextUserName"/>
+    <Button
+        android:id="@+id/btnLoginConfirm"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:textAllCaps="false"
+        app:layout_constraintRight_toRightOf="@id/guidlineLoginRight"
+        app:layout_constraintLeft_toLeftOf="@id/guidlineLoginLeft"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextPassword" />
+
+    <TextView
+        android:id="@+id/txtViewForgetPass"
+        android:text="Forgot your password?"
+        android:textStyle="bold"
+        android:textColor="@color/back_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginConfirm"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

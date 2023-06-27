@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DraftFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Toolbar
+        android:id="@+id/toolBarHistory"
+        android:layout_width="match_parent"
+        android:background="@color/primarycolor"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+
+    <Button
+        android:id="@+id/btnSettingHis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.Button.Icon"
+        app:icon="@drawable/ic_setting"
+
+        android:backgroundTint="@color/primarycolor"
+
+        app:layout_constraintLeft_toLeftOf="@+id/toolBarHistory"
+        app:layout_constraintTop_toTopOf="@id/toolBarHistory"/>
+
+    <TextView
+        android:id="@+id/txtViewDraft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/nothing"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

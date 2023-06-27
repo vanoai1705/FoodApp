@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_cash"
+        android:title="@string/action_cash"
+        android:icon="@drawable/ic_cash"/>
+
+    <item android:id="@+id/action_history"
+        android:title="@string/action_history"
+        android:icon="@drawable/ic_history"/>
+
+    <item android:id="@+id/action_bill"
+        android:title="@string/action_bill"
+        android:icon="@drawable/ic_bill"/>
+
+    <item android:id="@+id/action_cart"
+        android:title="@string/action_cart"
+        android:icon="@drawable/ic_tip"/>
+
+    <item android:id="@+id/action_seller"
+        android:title="@string/action_seller"
+        android:icon="@drawable/ic_seller"
+        />
+
+</menu>

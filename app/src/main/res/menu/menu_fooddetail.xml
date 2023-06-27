@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_photo"
+        android:title="@string/action_photo"
+        android:icon="@drawable/ic_menu_camera"/>
+
+    <item android:id="@+id/action_check_in"
+        android:title="@string/action_check_in"
+        android:icon="@drawable/ic_check_in"/>
+
+    <item android:id="@+id/action_review"
+        android:title="@string/action_review"
+        android:icon="@drawable/ic_review"/>
+
+    <item android:id="@+id/action_save"
+        android:title="@string/action_save"
+        android:icon="@drawable/ic_bookmark"/>
+
+    <item android:id="@+id/action_share"
+        android:title="@string/action_share"
+        android:icon="@drawable/ic_right_forward"
+        />
+</menu>
